@@ -1,4 +1,4 @@
-
+/* Start */
 /* Define custom CSS variables for colors */
 :root {
   --teal: #92CCCE;
@@ -157,7 +157,10 @@ takes up both of the columns in the first row of the grid structure
   height: 400px; /* Increase the height as desired */
 }
 
-/* */
+/* styles the card sections
+sets flex, justify content, and align items for positioning of the children elements within each card
+sets height, border, and margin - I had trouble positioning these so they are not ideal
+*/
 .card {
   display: flex;
   justify-content: flex-start;
@@ -167,6 +170,11 @@ takes up both of the columns in the first row of the grid structure
   margin-top: 0px;
 }
 
+
+/* styles the card-label class 
+sets background color, width, height, 
+padding, maringin, and align text to the right
+*/
 .card-label {
   background-color: var(--teal);
   width: 200px;
@@ -176,14 +184,19 @@ takes up both of the columns in the first row of the grid structure
   text-align: left;
 }
 
+/* Sets the font size of the h3 within the card-labels */
 .card-label h3 {
   font-size: 25px;
 }
 
+/* sets the font size of the spans within the card-labels */
 .card-label span {
   font-size: 15px;
 }
 
+/* sets up flex positioning of the .contact class, 
+adds padding and margin
+*/
 .contact {
   display: flex;
   justify-content: space-between;
@@ -192,6 +205,11 @@ takes up both of the columns in the first row of the grid structure
   margin: 10px 0px;
 }
 
+
+/* sets up the flex positioning
+removes default bullet point styling of the list items
+sets margin on the right
+*/
 .contact nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -200,15 +218,26 @@ takes up both of the columns in the first row of the grid structure
   margin-right: 100px;
 }
 
+
+/* adds margin around the li-s  */
 .contact li {
   margin: 25px;
 }
 
+/* styles the anchor tags
+adds custom bottom border and chages text color
+*/
 .contact a {
   color: var(--darkgray);
   border-bottom: solid 4px var(--main-h2-blue);
 }
 
+/* styled footer
+sets height, flex positioning
+bakground color, text color, 
+adds padding, sets font sizr,
+and aligns text to the center
+*/
 footer {
   height: 75px;
   display: flex;
@@ -228,27 +257,30 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
+/* this section adds background images to the cards */
 #led-wall{
   background-image: url("../images/led-wall.png");
   background-size: cover;
   background-position: center;
 }
 
+/* this section adds background images to the cards */
 #calculator{
   background-image: url("../images/calculator.png");
   background-size: cover;
   background-position: center;
 }
-
+/* this section adds background images to the cards */
 #pastel-puzzels{
   background-image: url("../images/pastel-puzzles.png");
   background-size: cover;
   background-position: center;
 }
-
+/* this section adds background images to the cards */
 #run-buddy{
   background-image: url("../images/run-buddy.png");
   background-size: cover;
   background-position: center;
 }
+
+/* END */
