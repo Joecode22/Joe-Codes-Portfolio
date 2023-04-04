@@ -6,6 +6,8 @@ This purpose of this project was to use different aspects of html, css, and adva
 
 I was able to use some advance CSS properties like flexbox and grid to not only match the layout but to also behave responsively on different screen sizes
 
+One particular property that I had never saw or used before this project was using the html selector in CSS to set up a smooth scrolling effect when internal navigation links are clicked. So this was a learning experience, for sure. 
+
 
 ## Installation
 
