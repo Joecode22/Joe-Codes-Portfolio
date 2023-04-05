@@ -14,7 +14,7 @@ One particular property that I had never saw or used before this project was usi
 There is no installation requirement
 
 ## Usage
-This project is deployed via GitHib pages. Follow this link to view: [1]: https://joecode22.github.io/CSS-Portfolio-Ex/ "Github Pages Deployed Site" 
+This project is deployed via GitHib pages. Follow this link to view: [Github Pages Deployed Site](https://joecode22.github.io/CSS-Portfolio-Ex) [1]: 
 
 ![website screenshot](assets/images/screenshot.png)
 
