@@ -1,12 +1,22 @@
 /* Start */
+/* Reset default margin and padding */
+body,
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 /* Define custom CSS variables for colors */
 :root {
-  --teal: #92CCCE;
-  --darkgray: #31343D;
+  --teal: #92ccce;
+  --darkgray: #31343d;
   --main-h2-blue: #466087;
   --indent: 50px;
   --main-section-h2: 36px;
 }
+
 /* adds a smooth scrolling affect when you click on an in-page link */
 html {
   scroll-behavior: smooth;
@@ -14,53 +24,56 @@ html {
 
 /* sets the font family and background color of the body element */
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: #EEEEF7;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: #eeeef7;
 }
 
 /* Set the background color and flex properties for the header */
 header {
-  background-color: var(--darkgray);
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 25px;
-  padding-bottom: 12.5px;
+  align-items: center;
+  background-color: var(--darkgray);
+  padding-bottom: 1vh;
+  padding-top: 2vh;
+  /* padding-top: 25px; */
+  /* padding-bottom: 12.5px; */
 }
 
 /* Set the font size, background color, and padding for the h1 element */
 header h1 {
-  font-size: 48px;
+  font-size: 3vw;
   color: var(--darkgray);
   background-color: var(--teal);
-  padding-left: 40px;
-  padding-right: 15px;
+  width: 15vw;
+  text-align: right;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  /* padding-right: 15px; */
 }
 
-/* this code sets the ul children to flex mode */
-header nav ul {
+header ul {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-right: 50px;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 0.5vh;
+  margin-right: 10vw;
 }
 
-/* this code fine tunes the position of the li elements */
-header nav ul li {
-  margin: 20px 7px 0px 0px;
+header li {
+  margin-left: 4vw;
 }
 
-/* this code creates a custom underline text decoration by using border bottom combined with padding it also sets the color of the text and removes the normal anchor tag text decoration */
-nav li a {
+/* styles the anchor tags within the nav */
+header a {
   color: var(--teal);
-  font-size: 24px;
   text-decoration: none;
   padding-left: 5px;
   padding-right: 5px;
   border-bottom: solid 4px var(--teal);
 }
 
-/* adds hover styling to our anchor elements */
 header nav ul li a:hover {
   background: var(--teal);
   color: var(--darkgray);
@@ -70,10 +83,11 @@ header nav ul li a:hover {
 /* this code creates a section for our background image and positions the child element (the h2) within it to be on the bottom right */
 .cool-subtitle {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
-  height: 150px;
-  width: 100%;
+  height: 25vh;
+  width: 100vw;
+  font-size: 1.35rem;
   background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
@@ -83,43 +97,96 @@ header nav ul li a:hover {
 .cool-subtitle h2 {
   color: var(--darkgray);
   background-color: var(--teal);
-  margin-right: 90px;
-  margin-bottom: 12px;
-  padding: 6px;
+  margin-right: 10vw;
+  margin-bottom: 1.5vh;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-main {
+.cool-subtitle .headshot {
+  height: 90%;
+  width: 12.5%;
+  border: solid 6px var(--main-h2-blue);
+  margin-left: 3vw;
+  background-color: aqua;
+}
+
+.flex-grid {
   color: var(--main-h2-blue);
+  display: flex;
+  /* align-items: stretch; */
+  margin: 0 10vw 0 10vw;
 }
 
+.col {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
 
-/* utility class styling start */
-main h2 {
-  font-size: 28px;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  /* flex: 1; */
+}
+
+.main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.sidebar h3 {
+  font-size: 2.7rem;
+}
+
+.side-about,
+.about {}
+
+.side-about,
+.side-work,
+.side-contact {
+  box-sizing: border-box;
   text-align: right;
-  border-right: 5px solid var(--main-h2-blue);
-  width: 10%;
-  padding-right: 10px;
+  padding-right: 3%;
 }
 
-/* styles about section. Sets the width adds padding and margin and makes child elements flex*/
 .about {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-left: 40px;
-  width: 90%;
-
+  border-left: 3px solid var(--main-h2-blue);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1vw;
+  margin-top: 4vh;
+  margin-right: 4vh;
 }
 
-/* styles the p element inside of the element with an about class
-sets font size, adds padding, margin
-*/
 .about p {
-  font-size: 20px;
-  padding: 5px 10px;
-  margin: 5px;
+  flex: 1;
+  min-height: 8vh;
+  max-height: 8vh;
 }
+
+.side-about .about {}
+
+.about .two-paragraphs,
+.work {
+  box-sizing: border-box;
+  /* padding-top: 3%; */
+  font-size: 1rem;
+  /* margin-left: 2%; */
+  /* margin-right: 10%; */
+}
+
+.side-work,
+.work {}
+
+/* .side-contact, .contact {
+} */
 
 /* styles teh .work-container class
 adds padding and margin
@@ -128,12 +195,11 @@ aligns items and adds padding and margin
 */
 .work-container {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 10px 0px;
-  margin: 10px 0px;
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  /* padding: 10px 0px; */
+  /* margin: 10px 0px; */
 }
-
 
 /* styles the card container class
 Uses grid and sets up the structure of the grid
@@ -142,10 +208,12 @@ adds padding, margin, and width
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px; 
-  padding: 20px;
-  margin: 10px 10px;
-  width: 85%;
+  grid-gap: 1vh;
+  border-left: solid 3px var(--main-h2-blue);
+  padding-left: 1vw;
+  /* padding: 20px; */
+  /* margin: 10px 10px; */
+  /* width: 85%; */
 }
 
 /* This grabs the first child
@@ -153,8 +221,9 @@ it sets the grid structure so that the box that this child represents
 takes up both of the columns in the first row of the grid structure
 */
 .card-container .card:first-child {
-  grid-column: 1 / 3; /* This makes the card span both columns */
-  height: 400px; /* Increase the height as desired */
+  grid-column: 1 / 3;
+  /* This makes the card span both columns */
+  height: 20vh;
 }
 
 /* styles the card sections
@@ -166,10 +235,9 @@ sets height, border, and margin - I had trouble positioning these so they are no
   justify-content: flex-start;
   align-items: flex-end;
   border: solid 7px var(--teal);
-  height: fit-content;
-  margin-top: 0px;
+  /* height: fit-content; */
+  /* margin-top: 0px; */
 }
-
 
 /* styles the card-label class 
 sets background color, width, height, 
@@ -177,11 +245,13 @@ padding, maringin, and align text to the right
 */
 .card-label {
   background-color: var(--teal);
-  width: 200px;
-  height: fit-content;
-  padding: 10px 10px;
-  margin-bottom: 10px;
+  /* width: 200px; */
+  /* height: fit-content; */
+  /* padding: 10px 10px; */
+  margin-top: 2vh;
+  margin-bottom: 1vh;
   text-align: left;
+  padding-right: 1vw;
 }
 
 /* Sets the font size of the h3 within the card-labels */
@@ -189,98 +259,109 @@ padding, maringin, and align text to the right
   font-size: 25px;
 }
 
-/* sets the font size of the spans within the card-labels */
-.card-label span {
-  font-size: 15px;
+/* this section adds background images to the cards */
+
+#surf-report {
+  background-image: url("https://picsum.photos/200/300?random=1");
+  background-size: cover;
+  background-position: center;
 }
 
-/* sets up flex positioning of the .contact class, 
-adds padding and margin
-*/
-.contact {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px 0px;
-  margin: 10px 0px;
+/* this section adds background images to the cards */
+#led-wall {
+  background-image: url("https://picsum.photos/200/300?random=2");
+  background-size: cover;
+  background-position: center;
 }
 
+/* this section adds background images to the cards */
+#calculator {
+  background-image: url("https://picsum.photos/200/300?random=3");
+  background-size: cover;
+  background-position: center;
+}
 
-/* sets up the flex positioning
-removes default bullet point styling of the list items
-sets margin on the right
-*/
-.contact nav ul {
+/* this section adds background images to the cards */
+#pastel-puzzels {
+  background-image: url("https://picsum.photos/200/300?random=4");
+  background-size: cover;
+  background-position: center;
+}
+
+/* this section adds background images to the cards */
+#run-buddy {
+  background-image: url("https://picsum.photos/200/300?random=5");
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar-content {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  height: 100%;
+}
+
+.about {
+  margin-bottom: 2vh;
+}
+
+.side-about {
+  height: 13vh;
+  margin-bottom: 6vh;
+}
+
+.side-work {
+  height: 43vh;
+  padding-top: 1vh;
+  margin-bottom: 3vh;
+}
+
+.work {
+  margin-bottom: 3vh;
+}
+
+.contact {
+  justify-self: flex-end;
+  align-self: flex-start;
+  border-left: solid 3px var(--main-h2-blue);
+  padding-bottom: 3vh;
+}
+
+.contact ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  margin-right: 100px;
+  /* justify-self: center; */
 }
 
-
-/* adds margin around the li-s  */
 .contact li {
-  margin: 25px;
+  text-decoration: none;
+  justify-self: end;
+  margin: 30px;
 }
 
-/* styles the anchor tags
-adds custom bottom border and chages text color
-*/
 .contact a {
+  text-decoration: none;
   color: var(--darkgray);
+  padding-left: 3px;
+  padding-right: 3px;
   border-bottom: solid 4px var(--main-h2-blue);
+  font-size: 1.25rem;
 }
 
-/* styled footer
-sets height, flex positioning
-bakground color, text color, 
-adds padding, sets font sizr,
-and aligns text to the center
-*/
 footer {
-  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--darkgray);
   color: var(--teal);
-  font-size: 18px;
-  padding: 10px;
-  text-align: center;
+  height: 5vh;
+  font-size: 1.5rem;
 }
 
-/* this section adds background images to the cards */
-
-#surf-report{
-  background-image: url("../images/surf-report.png");
+.headshot {
+  background-image: url("../images/learnantino.jpg");
   background-size: cover;
   background-position: center;
 }
-/* this section adds background images to the cards */
-#led-wall{
-  background-image: url("../images/led-wall.png");
-  background-size: cover;
-  background-position: center;
-}
-
-/* this section adds background images to the cards */
-#calculator{
-  background-image: url("../images/calculator.png");
-  background-size: cover;
-  background-position: center;
-}
-/* this section adds background images to the cards */
-#pastel-puzzels{
-  background-image: url("../images/pastel-puzzles.png");
-  background-size: cover;
-  background-position: center;
-}
-/* this section adds background images to the cards */
-#run-buddy{
-  background-image: url("../images/run-buddy.png");
-  background-size: cover;
-  background-position: center;
-}
-
-/* END */
