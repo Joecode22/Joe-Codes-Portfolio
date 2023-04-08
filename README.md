@@ -16,7 +16,7 @@ There is no installation requirement
 ## Usage
 This project is deployed via GitHib pages. Follow this link to view: [Github Pages Deployed Site](https://joecode22.github.io/CSS-Portfolio-Ex) [1]: 
 
-![website screenshot](assets/images/screenshot.png)
+![website screenshot](assets/images/screenshottwo.png)
 
 ## Credits
 
