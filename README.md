@@ -33,4 +33,5 @@ Some key features of the styling include:
 2. Flexbox and grid layouts for responsive design.
 3. Custom underline for navigation links and hover effects.
 4. Custom styling for the header, main content sections, and footer.
-5. Background images for specific project cards.
+5. Background images for specific project cards and the subtitle section.
+6. Photo/Avatar located within the subtitle section
