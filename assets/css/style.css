@@ -22,6 +22,7 @@ html {
 body {
   background-color: var(--deep-jungle-green);
   font-family: Arial, sans-serif;
+  color: var(--vibrant-white)
 }
 
 a {
@@ -35,7 +36,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  color: whitesmoke;
+  color: var(--vibrant-white);
   font-size: 2rem;
   background-color: rgba(31, 152, 104, 0.65); /* Choose color */
   border-bottom: 1px solid #ddd;
@@ -96,31 +97,25 @@ nav a:hover {
   justify-content: flex-start;
 }
 
-#about h2, #contact h2 {
+#about h2 {
   font-size: 3rem;
-  margin-left: auto;
   padding: 1vw;
   margin-top: 1vw;
 }
 
-#about p, #contact ul {
+#about p {
+  width: 100%;
   margin-top: 1vw;
-  margin-right: 50vw;
   padding: 1vw;
-  text-align: left;
-  border-left: solid 5px var(--earthy-brown);
+  border: solid 5px var(--earthy-brown);
   height: 10vw;
   font-size: 2rem;
-  
+
 }
 
-/* Work section */
-#work {
-  
-}
 /* styling for project section */
 .projects {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -137,8 +132,19 @@ nav a:hover {
   max-width: 300px;
 }
 
-.large {
-  max-width: 350px;
+/* Work Section Styling */
+#work {
+  display: flex;
+}
+#work h2{
+  font-size: 3rem;
+  padding: 1vw;
+  margin-top: 1vw;
+}
+
+.projects {
+  border: red 3px solid;
+  width: 100%;
 }
 
 /* Contact section */
@@ -146,12 +152,47 @@ nav a:hover {
   color: var(--vibrant-white);
 }
 
+#contact h2 {
+  font-size: 3rem;
+  padding: 1vw;
+  margin-top: 1vw;
+}
+
+
 /* Footer */
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   text-align: center;
-  padding: 20px;
   background-color: var(--vivid-pink);
   border-top: 1px solid #ddd;
   background-color: rgba(31, 152, 104, 0.65);
+  height: 10vh;
 }
-  
+
+
+#contact ul {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1vw;
+  padding: 1vw;
+  border-left: solid 5px var(--earthy-brown);
+  height: 10vw;
+}
+
+#contact li a{
+  font-size: 2rem;
+  color: var(--vibrant-white);
+  border-bottom: ridge 3px var(--vibrant-white);
+}
+
+#contact li a:hover{
+  color: var(--vibrant-white);
+  background-color: var(--vibrant-blue);
+  padding: 2vw;
+  border-radius: 2vw;
+  border-bottom: none;
+}
