@@ -40,7 +40,12 @@ nav a:hover {
   display: flex;
   justify-content: center;
   padding: 40px 0;
+  background-image: url('../images/background.jpg'); /* Adjust the path to match your file structure */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: cover; /* Scale the background image to cover the entire container */
 }
+
 
 /* styling for image */
 .avatar {
