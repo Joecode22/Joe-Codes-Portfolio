@@ -2,11 +2,16 @@
 :root {
   --deep-jungle-green: #004d40;
   --lush-green: #2e7d32;
-  --vibrant-blue: #1976d2;
+  --vibrant-blue: #77b6f4;
   --earthy-brown: #5d4037;
   --bright-orange: #f57c00;
   --vivid-pink: #c2185b;
 }
+
+html {
+  font-size: 62.5%; 
+}
+
 /* mini reset */
 * {
   margin: 0;
@@ -18,13 +23,12 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
 }
 
 a {
   text-decoration: none;
-  color: #333;
 }
+
 
 /* Header */
 header {
@@ -32,27 +36,47 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Change this line */
+  color: whitesmoke;
+  font-size: 2rem;
+  background-color: rgba(31, 152, 104, 0.65); /* Choose color */
   border-bottom: 1px solid #ddd;
 }
 
 nav a {
   margin-left: 10px;
+  color: whitesmoke;
+  padding: 0.5vw;
+  border-bottom: 3px solid whitesmoke;
+  
 }
 
 nav a:hover {
-  color: #555;
+  color: whitesmoke;
+  background-color: var(--vibrant-blue);
+  padding: 1vw;
+  border-radius: 2vw;
 }
 
 /* Hero section */
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-end;
   padding: 40px 0;
 }
 
+.hero h2{
+  font-size: 3rem;
+  margin-right: 5vw;
+  color: var(--vibrant-blue);
+  background-color: rgba(28, 90, 6, 0.509);
+  border-radius: 25px;
+  padding: 1vw;
+  font-size: 2vw;
+}
+
 .header-hero-container {
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/forest-road-background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,6 +87,8 @@ nav a:hover {
 .avatar {
   max-width: 200px;
   border-radius: 50%;
+  border: 3px solid var(--vibrant-blue);
+  margin-left: 5vw; 
 }
 
 /* About section */
@@ -100,12 +126,14 @@ nav a:hover {
 /* Contact section */
 #contact {
   padding: 40px;
+  color: var(--bright-orange);
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: var(--vivid-pink);
   border-top: 1px solid #ddd;
 }
+  
