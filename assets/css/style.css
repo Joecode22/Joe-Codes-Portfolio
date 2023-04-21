@@ -26,3 +26,11 @@ header {
   background-color: #f4f4f4;
   border-bottom: 1px solid #ddd;
 }
+
+nav a {
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: #555;
+}
