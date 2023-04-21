@@ -1,3 +1,12 @@
+/* Added color scheme variables */
+:root {
+  --deep-jungle-green: #004d40;
+  --lush-green: #2e7d32;
+  --vibrant-blue: #1976d2;
+  --earthy-brown: #5d4037;
+  --bright-orange: #f57c00;
+  --vivid-pink: #c2185b;
+}
 /* mini reset */
 * {
   margin: 0;
@@ -23,7 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0.8); /* Change this line */
   border-bottom: 1px solid #ddd;
 }
 
