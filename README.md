@@ -1,28 +1,25 @@
-# CSS-Portfolio-Example
+# Portfolio Page
 
-## Example portfolio page using HTML and CSS
+## Portfolio page built with HTML and CSS
 
-This purpose of this project was to use different aspects of html, css, and advanced css in order to build an example portfolio project.
-
-I was able to use some advance CSS properties like flexbox and grid to not only match the layout but to also behave responsively on different screen sizes
-
-One particular property that I had never saw or used before this project was using the html selector in CSS to set up a smooth scrolling effect when internal navigation links are clicked. So this was a learning experience, for sure. 
-
+This purpose of this project was to use different aspects of html, css, and advanced css in order to build an example portfolio project
 
 ## Installation
 
 There is no installation requirement
 
 ## Usage
+
 This project is deployed via GitHib pages. Follow this link to view: [Github Pages Deployed Site](https://joecode22.github.io/CSS-Portfolio-Ex) [1]: 
 
 ![website screenshot](assets/images/screenshottwo.png)
 
 ## Credits
-
-I observered Leon from #100Devs use google fonts to obtain the Roboto font and I did something similar so I must give him credit. 
+Photo by <a href="https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniele Levis Pelusi</a> on <a href="https://unsplash.com/photos/u1PsUccMa5g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 ## License
+
 please refer to the license section
 
 ## Features
