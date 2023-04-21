@@ -2,7 +2,7 @@
 :root {
   --deep-jungle-green: #004d40;
   --lush-green: #2e7d32;
-  --vibrant-blue: #77b6f4;
+  --vibrant-blue: #ffffff;
   --earthy-brown: #5d4037;
   --bright-orange: #f57c00;
   --vivid-pink: #c2185b;
@@ -19,10 +19,9 @@ html {
 }
 
 body {
+  background-color: var(--deep-jungle-green);
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -69,10 +68,9 @@ nav a:hover {
   font-size: 3rem;
   margin-right: 5vw;
   color: var(--vibrant-blue);
-  background-color: rgba(28, 90, 6, 0.509);
-  border-radius: 25px;
-  padding: 1vw;
-  font-size: 2vw;
+  border-bottom: 3px ridge var(--vibrant-blue);
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .header-hero-container {
@@ -135,5 +133,6 @@ footer {
   padding: 20px;
   background-color: var(--vivid-pink);
   border-top: 1px solid #ddd;
+  background-color: rgba(31, 152, 104, 0.65);
 }
   
