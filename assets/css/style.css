@@ -97,11 +97,11 @@ nav a:hover {
   justify-content: flex-start;
 }
 
-#about h2 {
+/* #about h2 {
   font-size: 3rem;
   padding: 1vw;
   margin-top: 1vw;
-}
+} */
 
 #about p {
   width: 100%;
@@ -113,44 +113,22 @@ nav a:hover {
   margin-left: 1vw; 
 }
 
-
-/* styling for project section */
-.projects {
-  display: grid;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-left: solid 5px var(--earthy-brown);
-}
-
-.project {
-  flex: 1;
-  margin: 10px;
-  text-align: center;
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-}
-
 /* work section and projects styling */
 #work {
   display: flex;
   align-items: flex-start; /* Add this line */
 }
 
-#work h2 {
+/* #work h2 {
   font-size: 3rem;
   padding: 1vw;
   margin-top: 1vw;
-}
+} */
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 1vw; /* Add margin to maintain proper spacing */
+#about h2, #work h2 {
+  font-size: 3rem;
+  padding: 1vw;
+  margin-top: 1vw;
 }
 
 
@@ -179,7 +157,7 @@ footer {
   height: 10vh;
 }
 
-
+/* contact section styling */
 #contact ul {
   margin-bottom: 1vh;
   width: 100%;
@@ -209,4 +187,67 @@ footer {
   padding: 1vw;
   border-radius: 1vw;
   border-bottom: none;
+}
+
+/* grid layout for projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.project {
+  position: relative;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 1rem;
+}
+
+.project-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.projects-container {
+  /* padding-left: 1rem; */
+  border-left: solid 5px var(--earthy-brown);
+}
+
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+/* attempting to fix alignment issues */
+.section-with-border {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.section-with-border::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: var(--earthy-brown);
+}
+
+#about, #contact, #work{
+  margin-left: 20px;
 }

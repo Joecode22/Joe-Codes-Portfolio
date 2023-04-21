@@ -16,6 +16,8 @@ This project is deployed via GitHib pages. Follow this link to view: [Github Pag
 
 ## Credits
 
+CSS reset by Eric Meyer: <https://meyerweb.com/eric/tools/css/reset/>
+
 Photo by <a href="https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniele Levis Pelusi</a> on <a href="https://unsplash.com/photos/u1PsUccMa5g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 ## License
