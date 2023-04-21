@@ -57,7 +57,7 @@ nav a:hover {
 #work {
   padding: 40px;
 }
-
+/* styling for project section */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -74,4 +74,21 @@ nav a:hover {
   width: 100%;
   height: auto;
   max-width: 300px;
+}
+
+.large {
+  max-width: 350px;
+}
+
+/* Contact section */
+#contact {
+  padding: 40px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
 }
