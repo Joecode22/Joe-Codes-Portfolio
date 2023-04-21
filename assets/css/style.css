@@ -54,7 +54,7 @@ nav a:hover {
   color: var(--vibrant-white);
   background-color: var(--vibrant-blue);
   padding: 1vw;
-  border-radius: 2vw;
+  border-radius: 1vw;
   border-bottom: none;
 }
 
@@ -106,18 +106,20 @@ nav a:hover {
 #about p {
   width: 100%;
   margin-top: 1vw;
-  padding: 1vw;
-  border: solid 5px var(--earthy-brown);
+  margin-bottom: 1vw;
+  border-left: solid 5px var(--earthy-brown);
   height: 10vw;
   font-size: 2rem;
-
+  margin-left: 1vw; 
 }
+
 
 /* styling for project section */
 .projects {
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
+  border-left: solid 5px var(--earthy-brown);
 }
 
 .project {
@@ -132,20 +134,25 @@ nav a:hover {
   max-width: 300px;
 }
 
-/* Work Section Styling */
+/* work section and projects styling */
 #work {
   display: flex;
+  align-items: flex-start; /* Add this line */
 }
-#work h2{
+
+#work h2 {
   font-size: 3rem;
   padding: 1vw;
   margin-top: 1vw;
 }
 
 .projects {
-  border: red 3px solid;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 1vw; /* Add margin to maintain proper spacing */
 }
+
 
 /* Contact section */
 #contact {
@@ -174,6 +181,7 @@ footer {
 
 
 #contact ul {
+  margin-bottom: 1vh;
   width: 100%;
   list-style: none;
   padding-left: 0;
@@ -181,6 +189,12 @@ footer {
   padding: 1vw;
   border-left: solid 5px var(--earthy-brown);
   height: 10vw;
+}
+
+#contact li {
+  display: inline-block;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 #contact li a{
@@ -192,7 +206,7 @@ footer {
 #contact li a:hover{
   color: var(--vibrant-white);
   background-color: var(--vibrant-blue);
-  padding: 2vw;
-  border-radius: 2vw;
+  padding: 1vw;
+  border-radius: 1vw;
   border-bottom: none;
 }
