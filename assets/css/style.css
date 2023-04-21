@@ -47,3 +47,8 @@ nav a:hover {
   max-width: 200px;
   border-radius: 50%;
 }
+
+/* About section */
+#about {
+  padding: 40px;
+}
