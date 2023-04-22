@@ -10,7 +10,8 @@
 }
 
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
+  /*1rem is now 10px*/
 }
 
 /* mini reset */
@@ -23,6 +24,10 @@ body {
   background-color: var(--deep-jungle-green);
   font-family: Arial, sans-serif;
   color: var(--vibrant-white)
+}
+
+h1 {
+  font-size: 3.5rem;
 }
 
 a {
@@ -38,16 +43,17 @@ header {
   padding: 20px;
   color: var(--vibrant-white);
   font-size: 2rem;
-  background-color: rgba(31, 152, 104, 0.65); /* Choose color */
+  background-color: rgba(31, 152, 104, 0.65);
+  /* Choose color */
   border-bottom: 1px solid #ddd;
 }
 
 nav a {
   margin-left: 10px;
-  color: whitesmoke;
+  color: var(--vibrant-white);
   padding: 0.5vw;
-  border-bottom: 3px solid whitesmoke;
-  
+  border-bottom: 3px solid var(--vibrant-white);
+
 }
 
 nav a:hover {
@@ -66,13 +72,13 @@ nav a:hover {
   padding: 40px 0;
 }
 
-.hero h2{
+.hero h2 {
   font-size: 3rem;
   margin-right: 5vw;
   color: var(--vibrant-white);
   border-bottom: 3px ridge var(--vibrant-white);
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .header-hero-container {
@@ -88,20 +94,21 @@ nav a:hover {
   max-width: 200px;
   border-radius: 50%;
   border: 3px solid var(--vibrant-blue);
-  margin-left: 5vw; 
+  margin-left: 5vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* About section */
-#about, #contact {
+#about,
+#contact,
+#work {
   display: flex;
   justify-content: flex-start;
 }
-
-/* #about h2 {
-  font-size: 3rem;
-  padding: 1vw;
-  margin-top: 1vw;
-} */
 
 #about p {
   width: 100%;
@@ -110,78 +117,62 @@ nav a:hover {
   border-left: solid 5px var(--earthy-brown);
   height: 10vw;
   font-size: 2rem;
-  margin-left: 1vw; 
+  padding-left: 2vw;
 }
 
 /* work section and projects styling */
 #work {
   display: flex;
-  align-items: flex-start; /* Add this line */
+  align-items: flex-start;
+  /* Add this line */
 }
 
-/* #work h2 {
+#about h2,
+#work h2,
+#contact h2 {
   font-size: 3rem;
-  padding: 1vw;
   margin-top: 1vw;
-} */
-
-#about h2, #work h2 {
-  font-size: 3rem;
-  padding: 1vw;
-  margin-top: 1vw;
+  width: 15vw;
+  text-align: end;
+  padding-right: 2vw;
+  ;
 }
+
+
 
 
 /* Contact section */
 #contact {
+  display: flex;
+  align-items: center;
   color: var(--vibrant-white);
+  height: 10vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 #contact h2 {
   font-size: 3rem;
-  padding: 1vw;
   margin-top: 1vw;
 }
 
-
-/* Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  text-align: center;
-  background-color: var(--vivid-pink);
-  border-top: 1px solid #ddd;
-  background-color: rgba(31, 152, 104, 0.65);
-  height: 10vh;
-}
-
-/* contact section styling */
 #contact ul {
-  margin-bottom: 1vh;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
   list-style: none;
-  padding-left: 0;
-  margin-top: 1vw;
-  padding: 1vw;
   border-left: solid 5px var(--earthy-brown);
-  height: 10vw;
+  height: 100%;
 }
 
-#contact li {
-  display: inline-block;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
-#contact li a{
+#contact li a {
   font-size: 2rem;
   color: var(--vibrant-white);
   border-bottom: ridge 3px var(--vibrant-white);
 }
 
-#contact li a:hover{
+#contact li a:hover {
   color: var(--vibrant-white);
   background-color: var(--vibrant-blue);
   padding: 1vw;
@@ -193,23 +184,21 @@ footer {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  padding: 1rem;
+  grid-gap: 2rem;
 }
 
 .project {
-  position: relative;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 1rem;
   border-radius: 1rem;
+  padding: 1rem;
 }
 
 .project-image {
   width: 100%;
   height: auto;
-  max-width: 300px;
+  max-width: auto;
   border-radius: 1rem;
+  object-fit: cover;
 }
 
 .project-large {
@@ -218,36 +207,19 @@ footer {
 }
 
 .projects-container {
-  /* padding-left: 1rem; */
   border-left: solid 5px var(--earthy-brown);
+  padding-left: 2vw;
+  padding-top: 1rem;
 }
 
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1rem;
-  padding: 1rem;
-}
-
-/* attempting to fix alignment issues */
-.section-with-border {
+/* Footer */
+footer {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.section-with-border::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 5px;
-  background-color: var(--earthy-brown);
-}
-
-#about, #contact, #work{
-  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background-color: rgba(31, 152, 104, 0.65);
+  height: 10vh;
 }
