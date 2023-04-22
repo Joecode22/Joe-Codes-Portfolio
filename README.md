@@ -30,9 +30,12 @@ please refer to the license section
 
 Some key features of the styling include:
 
-1. Custom color variables for easy color management.
-2. Flexbox and grid layouts for responsive design.
-3. Custom underline for navigation links and hover effects.
-4. Custom styling for the header, main content sections, and footer.
-5. Background images for specific project cards and the subtitle section.
-6. Photo/Avatar located within the subtitle section
+1. Navigation Bar: The website has a sticky navigation bar at the top, including links to the "About", "Work", and "Contact" sections of the page.
+
+2. Hero Section: The hero section consists of a developer's avatar and a catchy headline, "Paving the Path to Code Mastery," against an attractive background image.
+
+3. About Section: This section provides a brief introduction to the developer, with a title and paragraph for the description.
+
+4. Work Section: The work section showcases a grid layout of the developer's projects, including project titles, images, and descriptions. Each project image is also a clickable link, leading to the respective project's repository or live demo.
+
+5. ontact Section: The contact section lists three ways to get in touch with the developer - GitHub, LinkedIn, and Email - presented in a horizontal list layout.

@@ -257,3 +257,66 @@ footer {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow to create more or less depth */
 }
 
+/* media query for mobile responsiveness */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px; /* Reduce the base font size */
+  }
+
+  h1, h2, h3 {
+    font-size: 24px; /* Adjust heading font sizes */
+  }
+
+  /* Adjust the nav links to be more mobile-friendly */
+  nav a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* Adjust the grid layout for projects */
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Additional styles */
+  html {
+    font-size: 56.25%; /* 1rem is now 9px */
+  }
+
+  /* Adjust the hero section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    margin-right: 0;
+  }
+
+  .avatar {
+    margin-left: 0;
+  }
+
+  /* Adjust the about, work, and contact sections */
+  #about, #contact, #work {
+    flex-direction: column;
+  }
+
+  #about h2, #work h2, #contact h2 {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #about p {
+    height: auto;
+    padding-left: 1rem;
+  }
+
+  #contact ul {
+    width: 100%;
+    justify-content: center;
+    height: auto;
+  }
+}
+
