@@ -149,6 +149,8 @@ body {
   height: 10vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  color: var(--vibrant-white);
+  font-weight: 900;
 }
 
 #contact h2 {
@@ -183,6 +185,7 @@ body {
 /* grid layout for projects */
 .projects {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
 }
@@ -191,6 +194,20 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   padding: 1rem;
+}
+
+.project h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.project p {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .project-image {
@@ -203,7 +220,7 @@ body {
 
 .project-large {
   grid-column: span 2;
-  grid-row: span 2;
+  /* grid-row: span 1; */
 }
 
 .projects-container {
@@ -217,9 +234,26 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   border-top: 1px solid #ddd;
   background-color: rgba(31, 152, 104, 0.65);
-  height: 10vh;
+  height: 5vh;
 }
+
+.img-hover {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Apply the hover effect to the image */
+.img-hover img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-hover:hover img {
+  transform: scale(1.06); /* Adjust the scale value to change the pop out effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow to create more or less depth */
+}
+
