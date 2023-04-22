@@ -40,4 +40,4 @@ Some key features of the styling include:
 
 4. Work Section: The work section showcases a grid layout of projects, including project titles, images, and descriptions. Each project image is also a clickable link, leading to the respective project's repository or live demo.
 
-5. Contact Section: The contact section lists three ways to get in touch with the developer - GitHub, LinkedIn, and Email - presented in a horizontal list layout.
+5. Contact Section: The contact section lists GitHub, LinkedIn, and Email - presented in a horizontal list layout.
