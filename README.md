@@ -10,7 +10,9 @@ There is no installation requirement
 
 ## Usage
 
-This project is deployed via GitHib pages. Follow this link to view: [Github Pages Deployed Site](https://joecode22.github.io/CSS-Portfolio-Ex) [1]:
+This project is deployed via GitHib pages. Follow this link to view: [Github Pages Deployed Site](https://joecode22.github.io/Joe-Codes-Portfolio/) [1]:
+
+## Appearance
 
 ![website screenshot](assets/images/screenshot.png)
 
@@ -30,12 +32,12 @@ please refer to the license section
 
 Some key features of the styling include:
 
-1. Navigation Bar: The website has a sticky navigation bar at the top, including links to the "About", "Work", and "Contact" sections of the page.
+1. Navigation Bar: The website has navigation bar at the top, including links to the "About", "Work", and "Contact" sections of the page.
 
-2. Hero Section: The hero section consists of a developer's avatar and a catchy headline, "Paving the Path to Code Mastery," against an attractive background image.
+2. Hero Section: The hero section consists of image and headline, "Paving the Path to Code Mastery," against an attractive background image.
 
-3. About Section: This section provides a brief introduction to the developer, with a title and paragraph for the description.
+3. About Section: This section provides a brief introduction, with a title and paragraph for the description.
 
-4. Work Section: The work section showcases a grid layout of the developer's projects, including project titles, images, and descriptions. Each project image is also a clickable link, leading to the respective project's repository or live demo.
+4. Work Section: The work section showcases a grid layout of projects, including project titles, images, and descriptions. Each project image is also a clickable link, leading to the respective project's repository or live demo.
 
-5. ontact Section: The contact section lists three ways to get in touch with the developer - GitHub, LinkedIn, and Email - presented in a horizontal list layout.
+5. Contact Section: The contact section lists three ways to get in touch with the developer - GitHub, LinkedIn, and Email - presented in a horizontal list layout.
