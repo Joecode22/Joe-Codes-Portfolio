@@ -128,7 +128,6 @@ body {
 #work {
   display: flex;
   align-items: flex-start;
-  /* Add this line */
 }
 
 #about h2,
@@ -327,12 +326,6 @@ footer {
 /* Adjusting section spacing */
 section {
   padding: 5rem 0;
-}
-
-/* Adjusting the background color */
-body {
-  background-color: var(--light-background);
-  color: var(--deep-jungle-green);
 }
 
 /* Adding smooth scrolling effect */
